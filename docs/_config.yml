@@ -1,0 +1,14 @@
+title: AI 英语作文批改器项目说明
+author: Auto Essay Assistant
+logo: ""
+execute:
+  execute_notebooks: "off"
+html:
+  use_repository_button: false
+  use_issues_button: false
+  use_edit_page_button: false
+repository:
+  url: ""
+  path_to_book: docs
+launch_buttons:
+  notebook_interface: classic

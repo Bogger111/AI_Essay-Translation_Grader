@@ -1,0 +1,10 @@
+*.pyc
+.env
+essay_env/
+__pycache__/
+
+*.log
+tools/
+deploy_package/
+essay_grader_deploy_package.zip
+.streamlit/secrets.toml

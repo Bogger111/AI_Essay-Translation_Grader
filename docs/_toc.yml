@@ -1,0 +1,11 @@
+format: jb-book
+root: intro
+chapters:
+  - file: quick_start
+  - file: architecture
+  - file: streamlit_app
+  - file: ocr
+  - file: grading_flow
+  - file: rag_and_prompt
+  - file: files
+  - file: troubleshooting
