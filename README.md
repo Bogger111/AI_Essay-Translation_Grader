@@ -1,49 +1,44 @@
-# AI English Essay Grader
+# AI_Essay-Translation_Grader
 
-This is a Streamlit website for grading English essays and translations across CET-4, CET-6, TOEFL, IELTS, and GRE.
+## 项目简介
 
-## Run locally
+本项目是一个基于deepseekv4的英语作文与翻译批改工具，主要用于辅助英语学习中的作文评分、翻译评价和修改建议生成。
 
-1. Install dependencies:
+项目通过调用大语言模型 API，对用户输入的英文作文或翻译内容进行分析，并生成相对结构化的反馈。
 
-```powershell
-pip install -r requirements.txt
-```
+## 功能特点
 
-2. Create `.env` in the project root:
+- 英语作文批改
+- 英语翻译评价
+- 语法和表达问题分析
+- 修改建议生成
+- 支持不同考试场景下的写作反馈
+- 使用 Streamlit 构建网页交互界面
 
-```env
-OPENAI_API_KEY=your-api-key
-BASE_URL=https://api.deepseek.com
-MODEL=deepseek-chat
-```
+## 技术栈
 
-3. Start the website:
+- Python
+- Streamlit
+- 大语言模型 API
+- Prompt Engineering
+- OCR / 文本输入处理
 
-```powershell
-streamlit run app.py
-```
+## 项目动机
 
-## Share with a friend
+我在英语学习过程中，发现作文和翻译往往缺少及时、具体的反馈。偶然发现deepseek发布了V4版本更新，想到制作本项目来利用大语言模型的文本理解和生成能力，为英语学习者提供一个方便的批改辅助工具。
 
-The easiest option is Streamlit Community Cloud:
+本项目是作为一个学习辅助工具，帮助用户发现表达问题、理解修改方向，并提高写作和翻译能力。同时尝试调用大语言模型api。
 
-1. Put this project in a private GitHub repository.
-2. Deploy `app.py` on Streamlit Community Cloud.
-3. Add these secrets in the Streamlit app settings:
+## 主要功能
 
-```toml
-OPENAI_API_KEY = "your-api-key"
-BASE_URL = "https://api.deepseek.com"
-MODEL = "deepseek-chat"
-```
+### 作文批改
 
-4. Send your friend the Streamlit app URL.
+用户输入英文作文后，系统可以从内容完整性、语言表达、结构逻辑、语法错误等方面进行分析，并给出修改建议。
 
-Your friend will only use the website. They do not need to enter an API key.
+### 翻译评价
 
-## Notes
+用户输入翻译文本后，系统可以从准确性、流畅度、词汇选择和句式表达等方面进行评价。
 
-- Text input works even if OCR dependencies are not available.
-- Image OCR uses EasyOCR and may take longer on the first run because the OCR model needs to load.
-- Do not commit `.env` or `.streamlit/secrets.toml` to a public repository.
+### 修改建议
+
+系统会根据文本中的问题，给出更自然、更正式或更适合考试场景的表达建议。
